@@ -1,8 +1,30 @@
 namespace DesafioPOO.Models
 {
-    // TODO: Herdar da classe "Smartphone"
-    public class Nokia
+    public class Nokia : Smartphone
     {
-        // TODO: Sobrescrever o método "InstalarAplicativo"
+        public List<string> ListaAplicativo { get; init; }
+
+        public Nokia(string numero, string modelo, string imei, int memoria) : base(numero, modelo, imei, memoria)
+        {
+            ListaAplicativo = new List<string>();
+        }
+
+        public override void InstalarAplicativo(string nomeApp)
+        {
+            ListaAplicativo.Add(nomeApp);
+        }
+
+        public void MudarNumeroSmartPhone(string numero)
+        {
+            if (string.IsNullOrEmpty(numero))
+            {
+                Console.WriteLine("Numero inválido");
+                return;
+            }
+
+            Console.WriteLine($"o telefone: {Numero}, foi alterado para: {numero}.");
+
+            Numero = numero;
+        }
     }
 }
