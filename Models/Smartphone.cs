@@ -22,27 +22,27 @@ namespace DesafioPOO.Models
 
         public void ExibirModelo()
         {
-            Console.WriteLine($"O modelo do Smartphone é: {Modelo}");
+            Console.WriteLine($"O modelo do Smartphone é: {Modelo}.");
         }
 
         public void ExibirImei()
         {
-            Console.WriteLine($"O {Modelo} possui o imei: {Imei}");
+            Console.WriteLine($"O {Modelo}, possui o imei: {Imei}.");
         }
 
         public void ExibirMemoria()
         {
-            Console.WriteLine($"O {Modelo} possui a memória de: {Memoria}");
+            Console.WriteLine($"O {Modelo}, possui a memória de: {Memoria}.");
         }
 
         public void Ligar(string aparelho)
         {
-            Console.WriteLine($"O {Modelo} estar Ligando para {aparelho}");
+            Console.WriteLine($"O {Modelo}, estar Ligando para {aparelho}.");
         }
 
         public void ReceberLigacao(string aparelho)
         {
-            Console.WriteLine($"O {Modelo} Recebendo ligação de {aparelho}");
+            Console.WriteLine($"O {Modelo}, estar recebendo ligação de {aparelho}.");
         }
 
 

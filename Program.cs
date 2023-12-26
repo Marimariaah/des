@@ -23,12 +23,12 @@ iphone12.ExibirImei();
 nokia01.ExibirImei();
 Console.WriteLine();
 
-Console.WriteLine("chamada do SmartPhone: ");
+Console.WriteLine("Chamada do SmartPhone: ");
 iphone12.Ligar(nokia01.Modelo);
 nokia01.Ligar(iphone12.Modelo);
 Console.WriteLine();
 
-Console.WriteLine("recebimento de chamada do SmartPhone: ");
+Console.WriteLine("Recebimento de chamada do SmartPhone: ");
 iphone12.ReceberLigacao(nokia01.Modelo);
 nokia01.ReceberLigacao(iphone12.Modelo);
 Console.WriteLine();

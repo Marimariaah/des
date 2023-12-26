@@ -18,11 +18,11 @@ namespace DesafioPOO.Models
         {
             if (string.IsNullOrEmpty(numero))
             {
-                Console.WriteLine("Numero inválido");
+                Console.WriteLine("Número inválido");
                 return;
             }
 
-            Console.WriteLine($"o telefone: {Numero}, foi alterado para: {numero}.");
+            Console.WriteLine($"O telefone: {Numero}, foi alterado para: {numero}.");
 
             Numero = numero;
         }
